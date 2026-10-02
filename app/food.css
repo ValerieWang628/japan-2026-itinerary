@@ -1,0 +1,53 @@
+.item.foodNote {
+  grid-column: 1 / -1;
+  background: #e8efe8;
+  border-color: #cad8cc;
+}
+
+.foodNote h4 {
+  font-family: Georgia, "Noto Serif SC", serif;
+  font-size: 16px;
+}
+
+.foodNote p { margin-bottom: 0; }
+
+.chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin: 11px 0;
+}
+
+.chips span {
+  background: #eee9df;
+  color: #56655f;
+  border-radius: 999px;
+  padding: 5px 8px;
+  font-size: 9.5px;
+  line-height: 1.25;
+}
+
+.itemLinks {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+  align-items: center;
+}
+
+.itemLinks .bookLink {
+  color: #fff;
+  background: #bd542c;
+  border: 0;
+  border-radius: 999px;
+  padding: 6px 10px;
+}
+
+.badge.required { background: #f9d8cd; color: #a83d22; }
+.badge.strongly { background: #fbe8ce; color: #9a601f; }
+.badge.walkin { background: #e1ecdd; color: #35603a; }
+.badge.noreservation { background: #e5e7e6; color: #4d5b56; }
+
+@media (max-width: 760px) {
+  .itemTop { display: block; }
+  .itemTop .badge { margin-top: 8px; white-space: normal; }
+}
